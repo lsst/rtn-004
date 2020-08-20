@@ -7,17 +7,16 @@
 % Local commands go here.
 
 %If you want glossaries
-%\input{aglossary.tex}
-%\makeglossaries
+\input{aglossary.tex}
+\makeglossaries
 
 \title{Glossary and Acronyms}
 
 % Optional subtitle
 % \setDocSubtitle{A subtitle}
 
-\author{%
-Melissa Graham
-}
+\author   {Melissa Graham}
+
 
 \setDocRef{RTN-004}
 \setDocUpstreamLocation{\url{https://github.com/rubin-observatory/rtn-004}}
@@ -47,8 +46,42 @@ A dictionary of Rubin-related key terms and acronyms in an easily readable forma
 % Frequently for a technote we do not want a title page  uncomment this to remove the title page and changelog.
 % use \mkshorttitle to remove the extra pages
 
+\renewcommand{\thepage}{\arabic{page}}% Arabic numerals for page counter
+
+\setcounter{page}{1}% Start page number
+
 % ADD CONTENT HERE
 % You can also use the \input command to include several content files.
+
+%glsRefs go here
+
+% First test entries. GitHub works when using this small sample of refs.
+%\gls{CDN},\gls{DAC},\gls{Data Product}
+
+%+++++++++++++++++++
+% Following refs removed because their corresponding entries in glossarydefs.csv fail to compile.
+
+% Because of mismatch in case of "management"
+%\gls{AURA Management Council for Rubin Observatory}
+
+% Because of use of "&"
+%\gls{System Integration and Test}
+%\gls{I&T}
+%\gls{T&S}
+%\gls{CA-FACTS}
+
+% For undetermined reason
+%\gls{SLAC}
+%\gls{Hierarchical Triangular Mesh}
+%\gls{SDS}
+%\gls{b}
+
+% +++++++++++++++++++++
+
+ 
+
+% All glossary entries second test.
+\gls{1D},\gls{2D},\gls{2MASS},\gls{3D},\gls{A/D},\gls{AAS},\gls{ABI},\gls{ABOD},\gls{AC},\gls{ACCS},\gls{ACGIH},\gls{ACM},\gls{ACWP},\gls{AD},\gls{ADASS},\gls{ADC},\gls{ADCO},\gls{ADQL},\gls{ADS},\gls{ADU},\gls{AED},\gls{AEON},\gls{AGN},\gls{AIT},\gls{AIV},\gls{ALD},\gls{ALMA},\gls{AMCL},\gls{AMD},\gls{AMPATH},\gls{ANSI},\gls{ANTARES},\gls{AOB},\gls{AOC},\gls{AOS},\gls{AOSS},\gls{AP},\gls{APDB},\gls{API},\gls{ASAP},\gls{ASCII},\gls{ASDC},\gls{ATM},\gls{AU},\gls{AURA},\gls{AWS},\gls{B},\gls{BAC},\gls{BAO},\gls{BCE},\gls{BCWP},\gls{BCWS},\gls{BDC},\gls{BNF},\gls{BNL},\gls{BOE},\gls{BPS},\gls{BTU},\gls{Bps},\gls{CADC},\gls{CAM},\gls{CAM},\gls{CAOM},\gls{CAS},\gls{CASNET},\gls{CB},\gls{CBP},\gls{CC},\gls{CC-IN2P3},\gls{CCB},\gls{CCD},\gls{CCOB},\gls{CCP},\gls{CCS},\gls{CDN},\gls{CDS},\gls{CEC},\gls{CEE},\gls{CEP},\gls{CERN},\gls{CFHT-LS},\gls{CFR},\gls{CI},\gls{CI},\gls{CLP},\gls{CM},\gls{CMB},\gls{CMDB},\gls{CMMS},\gls{CNRS},\gls{COMPASS},\gls{CORBA},\gls{COS},\gls{COTS},\gls{COVID},\gls{CPI},\gls{CPP},\gls{CPR},\gls{CPU},\gls{CQA},\gls{CR},\gls{CR},\gls{CSA},\gls{CSDC},\gls{CSV},\gls{CTIO},\gls{CV},\gls{CfA},\gls{ComCam},\gls{DAC},\gls{DAQ},\gls{DAX},\gls{DB},\gls{DBB},\gls{DBMS},\gls{DC},\gls{DC2},\gls{DCM},\gls{DCR},\gls{DDF},\gls{DDMPM},\gls{DDN},\gls{DDOS},\gls{DEC},\gls{DES},\gls{DESC},\gls{DESI},\gls{DF},\gls{DIA},\gls{DIMM},\gls{DKIST},\gls{DM},\gls{DM-SST},\gls{DMCCB},\gls{DMCS},\gls{DMIS},\gls{DMLT},\gls{DMO},\gls{DMPM},\gls{DMQA},\gls{DMS},\gls{DMS-REQ},\gls{DMSE},\gls{DMSR},\gls{DMSS},\gls{DMSST},\gls{DMTN},\gls{DMTR},\gls{DNS},\gls{DOE},\gls{DOI},\gls{DOM},\gls{DOS},\gls{DOT},\gls{DP},\gls{DP0},\gls{DP1},\gls{DPAC},\gls{DPC},\gls{DPDD},\gls{DR},\gls{DR1},\gls{DRB},\gls{DRP},\gls{DS9},\gls{DTN},\gls{DUNE},\gls{DWDM},\gls{Db},\gls{DoF},\gls{DoNM},\gls{EAC},\gls{EB},\gls{EDC},\gls{EEPROM},\gls{EFD},\gls{EIE},\gls{EOS},\gls{EPA},\gls{EPO},\gls{EPOC},\gls{ESA},\gls{ESAC},\gls{ESNet},\gls{ESO},\gls{ETC},\gls{ETU},\gls{EUPS},\gls{EVM},\gls{EVMS},\gls{F2F},\gls{FAQ},\gls{FDR},\gls{FEA},\gls{FEC},\gls{FEE},\gls{FFRDC},\gls{FFT},\gls{FGCM},\gls{FGST},\gls{FIFO},\gls{FITS},\gls{FIU},\gls{FK5},\gls{FLOP},\gls{FLOPS},\gls{FMECA},\gls{FNAL},\gls{FOA},\gls{FOC},\gls{FOH},\gls{FPA},\gls{FPD},\gls{FPGA},\gls{FPSL},\gls{FS},\gls{FSAAS},\gls{FTE},\gls{FUSE},\gls{FWHM},\gls{FWP},\gls{FY},\gls{FY21},\gls{FoM},\gls{FoV},\gls{GAVO},\gls{GB},\gls{GCN},\gls{GDS},\gls{GFLOP},\gls{GFLOPS},\gls{GID},\gls{GIS},\gls{GLONASS},\gls{GMT},\gls{GNU},\gls{GPFS},\gls{GPL},\gls{GPS},\gls{GPU},\gls{GRB},\gls{GST},\gls{GUI},\gls{GW},\gls{Gb},\gls{HDD},\gls{HEALPix},\gls{HEASARC},\gls{HEP},\gls{HIPS},\gls{HPC},\gls{HQ},\gls{HR},\gls{HSC},\gls{HST},\gls{HTC},\gls{HTM},\gls{HTML},\gls{HTTP},\gls{HVAC},\gls{HW},\gls{IAU},\gls{IBM},\gls{ICBS},\gls{ICD},\gls{ICoD},\gls{IDA},\gls{IDAC},\gls{IDF},\gls{IDL},\gls{IN2P3},\gls{IP},\gls{IPAC},\gls{IPS},\gls{IRAF},\gls{IRSA},\gls{IS},\gls{ISD},\gls{ISO},\gls{ISR},\gls{IT},\gls{ITC},\gls{ITIL},\gls{ITO},\gls{ITSC},\gls{IVOA},\gls{IoA},\gls{JD},\gls{JDBC},\gls{JDR},\gls{JHU},\gls{JOG},\gls{JPL},\gls{JRE},\gls{JSON},\gls{JSR},\gls{JTM},\gls{JVM},\gls{JWST},\gls{K8S},\gls{KB},\gls{KBO},\gls{KIPAC},\gls{KPM},\gls{KPMO},\gls{KPNO},\gls{KW},\gls{L1},\gls{L2},\gls{L3},\gls{L4},\gls{LAN},\gls{LAPACK},\gls{LASER},\gls{LATISS},\gls{LBTO},\gls{LCA},\gls{LCLS},\gls{LCO},\gls{LCR},\gls{LDF},\gls{LDM},\gls{LDO},\gls{LED},\gls{LEP},\gls{LHC},\gls{LLNL},\gls{LOVE},\gls{LOY},\gls{LPGL},\gls{LPM},\gls{LSE},\gls{LSP},\gls{LSR},\gls{LSST},\gls{LSSTC},\gls{LSSTPO},\gls{LTS},\gls{LUT},\gls{LZ},\gls{LaTeX},\gls{M1M3},\gls{M2},\gls{MASS},\gls{MAST},\gls{MB},\gls{MBTU},\gls{MBps},\gls{MC},\gls{MCM},\gls{MCMC},\gls{MERRA},\gls{MIDAS},\gls{MIE},\gls{MJD},\gls{MMT},\gls{MOA},\gls{MOC},\gls{MODTRAN},\gls{MOF},\gls{MOPS},\gls{MOSFET},\gls{MOU},\gls{MPA},\gls{MPC},\gls{MPO},\gls{MPP},\gls{MPS},\gls{MPS/AST},\gls{MREFC},\gls{MREN},\gls{MSB},\gls{MSO},\gls{MTBF},\gls{MTDC},\gls{MTTR},\gls{MYDB},\gls{Mb},\gls{NAOJ},\gls{NAS},\gls{NAS},\gls{NASA},\gls{NCOA},\gls{NCSA},\gls{NEA},\gls{NED},\gls{NEO},\gls{NET},\gls{NFPA},\gls{NFS},\gls{NGSS},\gls{NIR},\gls{NIST},\gls{NMOC},\gls{NOAA},\gls{NOAO},\gls{NOC},\gls{NOIR},\gls{NOS},\gls{NPCF},\gls{NRAO},\gls{NRC},\gls{NSF},\gls{NSF's OIR Lab},\gls{NSO},\gls{NSS},\gls{NTP},\gls{NUV},\gls{NVMe},\gls{NYT},\gls{OAB},\gls{OBS},\gls{OC},\gls{OCDD},\gls{OCS},\gls{OI},\gls{OMB},\gls{OODS},\gls{OPCC},\gls{OPS},\gls{OPSTN},\gls{ORR},\gls{OS},\gls{OSHA},\gls{OSS},\gls{OSX},\gls{OTB},\gls{OpSim},\gls{PB},\gls{PCA},\gls{PCI},\gls{PCW},\gls{PD},\gls{PDAC},\gls{PDF},\gls{PDF},\gls{PDR},\gls{PDR1},\gls{PDR2},\gls{PDU},\gls{PEP},\gls{PFS},\gls{PI},\gls{PLL},\gls{PM},\gls{PMCS},\gls{PMO},\gls{PMP},\gls{POC},\gls{POE},\gls{POP},\gls{POSIX},\gls{PPDB},\gls{PPE},\gls{PR},\gls{PRC},\gls{PRT},\gls{PS},\gls{PSF},\gls{PST},\gls{PSTN},\gls{PVI},\gls{Pan-STARRS},\gls{Parsl},\gls{QA},\gls{QC},\gls{RA},\gls{RAC},\gls{RAID},\gls{RAL},\gls{RAM},\gls{RBSE},\gls{RC},\gls{RCC},\gls{RCI},\gls{RCM},\gls{RDBMS},\gls{REB},\gls{REN},\gls{RENATER},\gls{REUNA},\gls{RFC},\gls{RFP},\gls{RFQ},\gls{RM},\gls{RMS},\gls{ROOT},\gls{RS232C},\gls{RSA},\gls{RTD},\gls{RTM},\gls{RTN},\gls{S3},\gls{SAC},\gls{SAL},\gls{SAMP},\gls{SAO},\gls{SATA},\gls{SBS},\gls{SC},\gls{SCADA},\gls{SCIDAR},\gls{SCOC},\gls{SCOSC},\gls{SDQA},\gls{SDSS},\gls{SE},\gls{SED},\gls{SEM},\gls{SEMP},\gls{SEWG},\gls{SHA-1},\gls{SHE},\gls{SI},\gls{SIA},\gls{SIT},\gls{SIT-COM},\gls{SLA},\gls{SMARTS},\gls{SN},\gls{SOAP},\gls{SOAR},\gls{SOC},\gls{SODA},\gls{SOF},\gls{SOML},\gls{SOS},\gls{SOW},\gls{SP},\gls{SPL},\gls{SPI},\gls{SPIE},\gls{SQL},\gls{SQR},\gls{SQuaRE},\gls{SQuaSH},\gls{SRD},\gls{SRT},\gls{SS},\gls{SSC},\gls{SSD},\gls{SSH},\gls{SSL},\gls{SSM},\gls{SSP},\gls{SST},\gls{SST},\gls{STEM},\gls{STFC},\gls{SU},\gls{SUI},\gls{SUIT},\gls{SV},\gls{SW},\gls{SaaS},\gls{T/CAM},\gls{TAC},\gls{TACABS},\gls{TACC},\gls{TACREL},\gls{TAI},\gls{TAP},\gls{TB},\gls{TBA},\gls{TBC},\gls{TBD},\gls{TBR},\gls{TC},\gls{TCAM},\gls{TCS},\gls{TCT},\gls{TEA},\gls{TFLOP},\gls{TLS},\gls{TMA},\gls{TMT},\gls{TOPCAT},\gls{TOWG},\gls{TS},\gls{TSIP},\gls{TSS},\gls{UCL},\gls{UDP},\gls{UHV},\gls{UI},\gls{UID},\gls{UK},\gls{UKIDSS},\gls{UKIRT},\gls{URL},\gls{US},\gls{USDF},\gls{USNO},\gls{UT},\gls{UT1},\gls{UTC},\gls{UW},\gls{UX},\gls{VCD},\gls{VF2F},\gls{VISTA},\gls{VLA},\gls{VLBA},\gls{VLBI},\gls{VLT},\gls{VLTI},\gls{VM},\gls{VNOC},\gls{VO},\gls{VOIP},\gls{VRO},\gls{VST},\gls{W3C},\gls{WAN},\gls{WBS},\gls{WCAG},\gls{WCS},\gls{WFD},\gls{WFS},\gls{WG},\gls{WISE},\gls{WIYN},\gls{WL},\gls{WMS},\gls{WOUCAO},\gls{WP},\gls{WSDL},\gls{XHTML},\gls{XML},\gls{XMM},\gls{XSD},\gls{XSEDE},\gls{XSL},\gls{XSLT},\gls{YAML},\gls{ZTF},\gls{arcmin},\gls{arcsec},\gls{au},\gls{bps},\gls{deg},\gls{eV},\gls{gcc},\gls{kbps},\gls{stdin},\gls{stdout},\gls{AURA Management Council for LSST},\gls{AURA-O},\gls{Accident},\gls{Accruals},\gls{Alert Production DataBase},\gls{Alert Production},\gls{Alert},\gls{Alternate Standard Visit},\gls{Amplifier},\gls{Apache Parquet},\gls{Archive Center},\gls{Archive},\gls{Association Pipeline},\gls{Association of Universities for Research in Astronomy},\gls{Attribute},\gls{AuxTel},\gls{Base Facility},\gls{Base Year Cost},\gls{Baseline},\gls{Baseline, Cost},\gls{Baseline, Design},\gls{Baseline, Functional},\gls{Baseline, Schedule},\gls{Baseline, System},\gls{Baseline, Technical},\gls{Basis of Estimate},\gls{Batch Production},\gls{Broker},\gls{Builder},\gls{Business Manager},\gls{Butler},\gls{Buyer},\gls{COBRA},\gls{Cadence},\gls{CalExp},\gls{Calibrated Science Image},\gls{Calibration Image},\gls{Calibration Scientist},\gls{Camcol},\gls{Camera Crosstalk-Corrected Image},\gls{Camera},\gls{CatSim},\gls{Center},\gls{Central Administrative Services},\gls{Change Control Board Chair},\gls{Change Control Board},\gls{Change Control Process},\gls{Change Control},\gls{Change Controlled Documents},\gls{Channel},\gls{Charge-Coupled Device},\gls{Chi-squared Coadd Image},\gls{Chief Scientist},\gls{CmdLineTask},\gls{Coadd Image},\gls{Collimated Beam Projector},\gls{Commissioning},\gls{Compliance and Quality Administrator},\gls{Compliance},\gls{Configuration Item},\gls{Constraint},\gls{Construction},\gls{Contingency Management},\gls{Contingency},\gls{Contract},\gls{Cost Estimate},\gls{DIAObject},\gls{DIASource},\gls{Data Access Center},\gls{Data Backbone},\gls{Data Identifier},\gls{Data Management Subsystem},\gls{Data Management System},\gls{Data Management},\gls{Data Product},\gls{Data Release Data Product},\gls{Data Release Processing},\gls{Data Release Production},\gls{Data Release},\gls{Department of Energy},\gls{Deputy Director},\gls{Descope},\gls{Difference Image Analysis},\gls{Difference Image},\gls{Differential Chromatic Refraction},\gls{Director},\gls{Docker},\gls{DocuShare},\gls{Document Specialist},\gls{Document},\gls{Earned Value Management System},\gls{Earned Value Management},\gls{Earned Value},\gls{Eimage},\gls{Enclave},\gls{Encumbrances},\gls{Escalation},\gls{Filter},\gls{Firefly},\gls{Flexible Image Transport System},\gls{Focal plane array},\gls{ForcedSource},\gls{Full-Time Equivalent},\gls{GEANT},\gls{GalSim},\gls{General Parallel File System},\gls{Global Interlock System},\gls{Handle},\gls{Head of Safety},\gls{Image Decorrelation},\gls{Image Simulation (ImSim)},\gls{Incident},\gls{Independent Data Access Center},\gls{Information Technology Services Committee},\gls{Information Technology Systems Administrator},\gls{Instance Catalog},\gls{Institutional Member},\gls{Instrument Signature Removal},\gls{Integrated Project Schedule},\gls{Interface Control Document},\gls{Interface Support Document},\gls{International Affiliate},\gls{J2000},\gls{JIRA},\gls{Joint Oversight Group},\gls{Julian Date},\gls{Kubernetes},\gls{LSST Change Request},\gls{LSST Corporation},\gls{LSST Project Office},\gls{Level 1 Data Product},\gls{Level 1 Processing},\gls{Level 2 Data Product},\gls{Level 2 Processing},\gls{Level 3 Data Product},\gls{Level 3 Processing},\gls{Major Research Equipment and Facility Construction},\gls{Manifest},\gls{Mapper},\gls{Mini-Broker},\gls{Moving Object Processing System},\gls{My Database},\gls{NCSA Facility},\gls{National Science Foundation},\gls{Nightly Alert Processing},\gls{Nightly Archive Processing},\gls{Non-Standard Visit},\gls{Object},\gls{Offer},\gls{Operations Rehearsal},\gls{Operations Simulation},\gls{Operations},\gls{Opportunity Management},\gls{Opportunity},\gls{Overscan},\gls{PSF match},\gls{PhoSim},\gls{PipelineTask},\gls{Policy file},\gls{Preferred Version},\gls{Primavera},\gls{Processed Visit Image},\gls{Procurement},\gls{Project Execution Plan},\gls{Project Management Controls Specialist},\gls{Project Management Controls System},\gls{Project Management Office},\gls{Project Manager},\gls{Project Science Team},\gls{Project Scientist},\gls{Prompt Data Product},\gls{Prompt Processing},\gls{Prompt Products DataBase},\gls{QAWG},\gls{Qserv},\gls{Quality Assurance},\gls{Quality Control},\gls{Raft},\gls{Raw Image},\gls{Release},\gls{Requirement},\gls{Retarget},\gls{Review Committee},\gls{Review Data Package},\gls{Review Decision Making Authority},\gls{Review Hub},\gls{Review Plan},\gls{Review},\gls{Risk Management},\gls{Risk},\gls{Risk, Cost},\gls{Risk, Programmatic},\gls{Risk, Schedule},\gls{Risk, Technical},\gls{SCons},\gls{SDQA Metric},\gls{SDQA Rating},\gls{SDQA Status},\gls{SDQA Threshold},\gls{SHE Plans},\gls{Safety Council},\gls{Safety Manager},\gls{Safety},\gls{Satellite Facility},\gls{Science Advisory Committee},\gls{Science Collaboration Chair},\gls{Science Collaboration},\gls{Science Data Quality Assessment},\gls{Science Pipelines},\gls{Science Platform},\gls{Science Quality Analysis Harness},\gls{Science Verification},\gls{Scope},\gls{Sensor},\gls{Signature Authority},\gls{Simonyi Survey Telescope},\gls{Simulations Lead},\gls{Single Visit Image},\gls{Singularity},\gls{Site Manager},\gls{Sloan Digital Sky Survey},\gls{Snap},\gls{Software Stack},\gls{Solar System Object},\gls{Solar System Processing},\gls{Sole Source Justification},\gls{Sole Source},\gls{Source Association},\gls{Source},\gls{Speakers Bureau Website},\gls{Speakers Bureau},\gls{Special Program},\gls{Specification},\gls{Spectral Energy Distribution},\gls{Standard Visit},\gls{Stop Work Authority},\gls{Stripe 82},\gls{Subcontract},\gls{Subsystem Manager},\gls{Subsystem Scientist},\gls{Subsystem Systems Engineer},\gls{Subsystem},\gls{Summit Facility},\gls{Summit},\gls{Systems Engineer},\gls{Systems Engineering Manager},\gls{Systems Engineering},\gls{Systems Scientist},\gls{Task},\gls{Technical Baseline Classified Index (LSE-90)},\gls{Telescope and Site},\gls{Template},\gls{Then-Year Cost},\gls{Travel Administrator},\gls{User Generated Data Product},\gls{User Generated Processing},\gls{Validation},\gls{Verification},\gls{Visit},\gls{Wide-Fast-Deep},\gls{Work Breakdown Structure},\gls{Work Elements},\gls{World Coordinate System},\gls{adaptive moments},\gls{afw},\gls{aggregate metric},\gls{aggregation},\gls{airmass},\gls{algorithm},\gls{aperture correction},\gls{astrometry},\gls{astronomical object},\gls{background},\gls{brighter-fatter effect},\gls{calibration},\gls{camera},\gls{command-line task},\gls{configuration},\gls{dashboard},\gls{data collection},\gls{data repository},\gls{database schema},\gls{deVaucouleurs profile},\gls{deblend},\gls{declination},\gls{deepCoadd},\gls{deepDiff},\gls{drill down},\gls{ephemeris},\gls{epoch},\gls{eups},\gls{eups-tag},\gls{exponential profile},\gls{flux},\gls{footprint},\gls{forced photometry},\gls{git},\gls{git-tag},\gls{instrumental footprint},\gls{jointcal},\gls{magnitude, PSF},\gls{magnitude, Petrosian},\gls{magnitude, Pogson},\gls{metadata},\gls{metric value},\gls{metric},\gls{middleware},\gls{model metric},\gls{monitoring},\gls{passband},\gls{patch},\gls{photometric redshift},\gls{pipeline},\gls{point metric},\gls{point spread function},\gls{postage stamp},\gls{precovery},\gls{provenance},\gls{releasable product},\gls{release-tag},\gls{right ascension},\gls{seeing},\gls{shape},\gls{sky map},\gls{source footprint},\gls{sqlite3},\gls{stack},\gls{supertask},\gls{survey footprint},\gls{tidy data},\gls{tile},\gls{tracklet},\gls{tract},\gls{transient},\gls{warp}
 
 \appendix
 % Include all the relevant bib files.
@@ -58,13 +91,12 @@ A dictionary of Rubin-related key terms and acronyms in an easily readable forma
 \bibliography{local,lsst,lsst-dm,refs_ads,refs,books}
 
 % Make sure lsst-texmf/bin/generateAcronyms.py is in your path
-\section{Acronyms} \label{sec:acronyms}
-\input{acronyms.tex}
+%\section{Acronyms}
+%\input{acronyms.tex}
 % If you want glossary uncomment below -- comment out the two lines above
-%\printglossaries
+\label{sec:acronyms}
+\printglossaries
 
 
-
-
-
+% \input{checklist}
 \end{document}
