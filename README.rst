@@ -3,9 +3,9 @@
 .. image:: https://github.com/rubin-observatory/rtn-004/workflows/CI/badge.svg
    :target: https://github.com/rubin-observatory/rtn-004/actions/
 
-#####################
-Glossary and Acronyms
-#####################
+#############################################
+Guidelines for Community Participation in DP0
+#############################################
 
 RTN-004
 =======
