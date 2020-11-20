@@ -3,14 +3,14 @@
 .. image:: https://github.com/rubin-observatory/rtn-004/workflows/CI/badge.svg
    :target: https://github.com/rubin-observatory/rtn-004/actions/
 
-#############################################
-Guidelines for Community Participation in DP0
-#############################################
+########################################################
+Guidelines for Community Participation in Data Preview 0
+########################################################
 
 RTN-004
 =======
 
-A dictionary of Rubin-related key terms and acronyms in an easily readable format.
+This document provides an overview of the goals and policies for community participation in the Rubin Observatory pre-operations Data Preview 0 (DP0).
 
 Links
 =====
