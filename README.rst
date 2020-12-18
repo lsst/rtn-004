@@ -21,7 +21,7 @@ Links
 Build
 =====
 
-This repository includes lsst-texmf_  and operations_milestones_  as a Git submodule.
+This repository includes lsst-texmf_ as a Git submodule.
 Clone this repository::
 
     git clone --recurse-submodules https://github.com/rubin-observatory/rtn-004
@@ -33,6 +33,16 @@ Compile the PDF::
 Clean built files::
 
     make clean
+
+
+Extract milestones
+------------------
+
+A table of the relevant milestones and their dates is extracted from Jira into the ``milestones.tex`` file, which is committed as part of this repository.
+To update the milestones table in ``milestones.tex``::
+
+    make milestones.tex
+
 
 Updating acronyms
 -----------------
