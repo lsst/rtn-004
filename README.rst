@@ -34,6 +34,16 @@ Clean built files::
 
     make clean
 
+
+Extract milestones
+------------------
+
+A table of the relevant milestones and their dates is extracted from Jira into the ``milestones.tex`` file, which is committed as part of this repository.
+To update the milestones table in ``milestones.tex``::
+
+    make milestones.tex
+
+
 Updating acronyms
 -----------------
 
