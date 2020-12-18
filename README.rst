@@ -21,7 +21,7 @@ Links
 Build
 =====
 
-This repository includes lsst-texmf_ as a Git submodule.
+This repository includes lsst-texmf_  and operations_milestones_ as a Git submodule.
 Clone this repository::
 
     git clone --recurse-submodules https://github.com/rubin-observatory/rtn-004
