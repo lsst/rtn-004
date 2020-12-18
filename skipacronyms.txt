@@ -1,4 +1,7 @@
 # List acronyms that should be ignored by generateAcronyms.py.
+ID
+CE
+PREOPS
 PATH
 MM
 DD
