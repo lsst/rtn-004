@@ -27,8 +27,8 @@
 % \setDocCurator{The Curator of this Document}
 
 \setDocAbstract{%
-This document provides an overview of the goals and policies for community participation in the Rubin Observatory pre-operations Data Preview 0 (DP0).
-Starting in mid-2021, simulated LSST-like data sets will be made available in the Rubin Science Platform (RSP), and up to 300 RSP accounts will be allocated to community participants.
+This document provides an overview of the goals and policies for community participation in the first of three Rubin Observatory data previews during pre-operations: Data Preview 0 (DP0).
+DP0 will starting in mid-2021, when simulated LSST-like data sets will be made available in the Rubin Science Platform (RSP), and up to 300 RSP accounts will be allocated to community participants.
 RSP access is limited for DP0 due to the Rubin pre-operations team's limited scope in providing support for data software and services that are still in development.
 The term "DP0 delegate" has been adopted to reflect the fact that this limited number of participants will be representing the science community as early users of the RSP.
 This document describes the diversity-driven application and selection process for DP0 delegates, and briefly describes some of the resources, support, and activities that will be available to them.
@@ -62,14 +62,14 @@ This document describes the diversity-driven application and selection process f
 There are three planned Data Previews (DPs) during the period leading up to the start of Rubin Operations, termed pre-operations.
 DP0 will be based on simulated data.
 DP1 and DP2 will be based on data taken during Rubin Observatory commissioning; DP1 based on data taken with the Rubin Observatory Commissioning Camera (ComCam), and DP2 based on data taken with the LSST Camera (LSSTCam) -- the science instrument for Rubin Observatory.
-DP0 is planned for 2021 with DP1 and DP2 currently foreseen for 2022 and 2023 respectively.
+DP0 is planned to start in June 2021 and run through 2022, with DP1 and DP2 currently foreseen to begin in 2022 and 2023 respectively.
 The Data Previews will enable the community to access and analyze LSST-like data in the Rubin Science Platform (RSP) on a shared-risk basis. 
 
 \subsection{The Goals of DP0}\label{ssec:intro_goals}
 
 As described in \citeds{RTN-001}, the two goals of DP0 are:
 \begin{enumerate}
-\item To serve as an early integration test of the Data Management System (DMS) and inform further development of Rubin?s LSST Science Pipelines (hereafter LSST Science Pipelines) and the Rubin Science Platform (RSP).
+\item To serve as an early integration test of the Data Management System (DMS) and inform further development of Rubin's LSST Science Pipelines (hereafter LSST Science Pipelines) and the Rubin Science Platform (RSP).
 \item To enable the community to learn to use the LSST data products and services, to prepare for early science with commissioning and year 1 data, and to provide feedback to Rubin Observatory. 
 \end{enumerate}
 
@@ -124,11 +124,13 @@ As DP0 access will be a limited resource for the science community, it comes wit
 
 \subsubsection{Benefits}\label{sssec:intro_del_bene}
 
-Anticipated benefits for DP0 delegates include:
+Anticipated benefits for DP0 delegates include, for example:
 \begin{itemize}
 \item an accelerated learning experience in the Rubin Science Platform
-\item becoming more competitive for grants and early science
-\item opportunities to take a leadership role in their field and/or Science Collaboration
+% \item becoming more competitive for grants and early science
+\item expertise that could be useful for grant applications or early science publications
+% \item opportunities to take a leadership role in their field and/or Science Collaboration
+\item the potential to develop, e.g., analysis software, visualization tools, for LSST science 
 \item having options to publish or publicize the results of their DP0 work (software, analysis)
 \item the ability to advocate for RSP developments beneficial to their scientific field
 \end{itemize}
@@ -139,17 +141,17 @@ These potential benefits of DP0 participation motivate the focus on diversity an
 
 \subsubsection{Responsibilities}\label{sssec:intro_del_resp}
 
-The most important responsibility is that DP0 delegates learn how to use the RSP via the on-boarding process well enough to perform some basic scientific exercises, and then take action that informs or enhances the DMS, the RSP, or a Science Collaboration. 
+The most important responsibility is that DP0 delegates learn how to use the RSP,  installed in the Interim Data Facility (IDF), via the on-boarding process well enough to perform some basic scientific exercises, and then take action that informs or enhances the DMS, the RSP, or a Science Collaboration. 
 
 Such actions are envisioned to be simple and optional (they will not be tracked), and it will be left to the discretion of individual delegates to decide what kind of actions best match their interests and expertise.
 Examples of delegate actions are provided in Section \ref{ssec:res_act}.
 
-The time spent by DP0 delegates will not be tracked and there is no minimum (or maximum), but the estimated time commitment for DP0 delegates to gain at least some of benefits of participation is approximately 12-36 hours (e.g., 1-3 hours per week over three months).
+The time spent by DP0 delegates will not be tracked and there is no minimum (or maximum), but the estimated time commitment for DP0 delegates to gain at least some of the benefits of participation is approximately 12-36 hours (e.g., 1-3 hours per week over three months).
 This time can be distributed in any manner that is convenient to the delegate, and allocated accounts do not expire\footnote{In the case of oversubscription for the 300 RSP accounts, delegates might be asked to relinquish their accounts if they are not using them, in order to make way for others (Section \ref{ssec:res_pol}).}.
 
 In addition to the above, all DP0 delegates will be expected to:
 \begin{itemize}
-\item abide by the data rights policy in \citeds{RDO-013}
+\item abide by the Rubin Observatory data policy \citedsp{RDO-013}
 \item adhere to security policies regarding their RSP accounts at the IDF
 \item abide by usage policies of the RSP and the IDF
 \item use the on-boarding resources to learn about the RSP
@@ -158,6 +160,10 @@ In addition to the above, all DP0 delegates will be expected to:
 \item help other DP0 delegates resolve issues when possible
 \end{itemize}
 
+Policies regarding the access to and use of the Rubin Observatory data products and services are described in \citeds{RDO-013}.
+DPOL-302 and DPOL-507 describe how only data rights holders may have Rubin Science Platform accounts, and this is why DP0 participants must have data rights.
+The simulated data sets used for DP0 are world-public in the language of DPOL-301, which means that the data can be shared with anyone (and does not mean the data will be served publicly).
+Anyone may publish results based on analyses of world-public data sets.
 Policies regarding account usage, security, and off-boarding are described in Section \ref{ssec:res_pol}, and on-boarding resources for DP0 delegates in Section \ref{ssec:res_sup}. 
 
 \subsection{Milestones}
@@ -168,13 +174,14 @@ Jira remains the source of truth for all dates.
 
 \section{Delegate Selection Process}\label{sec:sel}
 
-There will be 300 RSP user accounts at the IDF available for science community DP0 delegates, in addition to the ~150 accounts for Rubin staff members.
-This marks an almost order of magnitude increase in the number of community accounts in the current NCSA instance of the RSP (via the Stack Club).
+There will be 300 RSP user accounts at the IDF available for science community DP0 delegates.
+In addition, there will be $\sim$150 accounts to cover all Rubin Observatory staff members who need one (e.g., Data Management, Verification and Validation, Commissioning, and Community Engagement team members).
+For reference, 300 RSP accounts for community participants marks an almost order of magnitude increase in the number of community accounts in the current NCSA instance of the RSP (via the Stack Club).
 
 The number of RSP accounts remains constrained during the Rubin Observatory construction and pre-operations phase -- and especially for DP0 -- due to the Rubin pre-operations team's limited scope in providing support for data software and services that are still in development.
 Time is needed to scale up in a sustainable manner.
+It is a primary goal of the Rubin pre-operations team to provide RSP access as soon as possible to all data rights holders over the course of the data previews. 
 At least by the start of Rubin Observatory Operations, all data rights holders will be able to have RSP accounts.
-It is a primary goal of the Rubin pre-operations team to provide RSP access as soon as possible to all data rights holders. 
 
 All DP0 delegates must be data rights holders, e.g., US or Chilean scientists, or individuals associated with an International Contribution (in-kind) proposal in progress \citeds{RDO-013}.
 
@@ -213,43 +220,50 @@ For example, Stack Club\footnote{\url{https://github.com/LSSTScienceCollaboratio
 
 \subsection{Selection Committee}\label{ssec:sel_comm}
 
-The delegate selection committee will be facilitated by the Rubin Observatory Community Engagement Team (CET), and will contain representatives from (or identified by) the following sources.
-Individual committee members will be identified by the CET and the Rubin directorate.
+The delegate selection committee will be comprised mainly of members of the Rubin Observatory Community Engagement Team (CET) and the Rubin Observatory Director's Office, and will seek advisement from the LSST Science Collaborations about the delegate representatives in Group H.
 
-\begin{table}[!h]
-\centering
-\caption{Approximate targeted distribution of selection committee representation.}\label{tab:selection_committee}
-\begin{tabular}{ll}
-\hline
-Number & Source \\
-\hline \hline
-4 & Science Advisory Council (SAC) and the LSST Science Collaborations \\
-3 & Community Engagement Team and Rubin Observatory Director's Office \\
-3 & Rubin Operations (e.g., Data Production, SPaRE, RSP, In-Kind Program Coordinators) \\
-2 & NOIR Lab (e.g., Community Science Data Center), DOE, or other institutions \\
-2 & Chilean astronomical community \\
-\hline
-\end{tabular}
-\end{table}
+The selection committee will use the diversity-based selection criteria in Section \ref{ssec:sel_crit}.
 
-To keep committee participation manageable, committee members will be primarily tasked with providing shortlists of applicants for one or more groups.
-For example, committee members from the SAC and Science Collaborations would be primarily tasked with generating a shortlist for Group H, but would also provide input on the other groups.
-The CET and the Rubin directorate will merge these shortlists into a final list of DP0 delegates.
+%The delegate selection committee will be facilitated by the Rubin Observatory Community Engagement Team (CET), and will contain representatives from (or identified by) the following sources.
+%Individual committee members will be identified by the CET and the Rubin directorate.
 
-All selection committee members will use the diversity-based selection criteria in Section \ref{ssec:sel_crit} when forming shortlists for the various groups.
-Prior to meeting, the CET will facilitate a session on unconscious bias for the selection committee members.
-The capacity to view form results without names will be provided to the committee.
+%\begin{table}[!h]
+%\centering
+%\caption{Approximate targeted distribution of selection committee representation.}\label{tab:selection_committee}
+%\begin{tabular}{ll}
+%\hline
+%Number & Source \\
+%\hline \hline
+%4 & Science Advisory Council (SAC) and the LSST Science Collaborations \\
+%3 & Community Engagement Team and Rubin Observatory Director's Office \\
+%3 & Rubin Operations (e.g., Data Production, SPaRE, RSP, In-Kind Program Coordinators) \\
+%2 & NOIR Lab (e.g., Community Science Data Center), DOE, or other institutions \\
+%2 & Chilean astronomical community \\
+%\hline
+%\end{tabular}
+%\end{table}
+
+%To keep committee participation manageable, committee members will be primarily tasked with providing shortlists of applicants for one or more groups.
+%For example, committee members from the SAC and Science Collaborations would be primarily tasked with generating a shortlist for Group H, but would also provide input on the other groups.
+%The CET and the Rubin directorate will merge these shortlists into a final list of DP0 delegates.
+
+%All selection committee members will use the diversity-based selection criteria in Section \ref{ssec:sel_crit} when forming shortlists for the various groups.
+%Prior to meeting, the CET will facilitate a session on unconscious bias for the selection committee members.
+%The capacity to view form results without names will be provided to the committee.
 
 \subsection{Selection Criteria}\label{ssec:sel_crit}
 
 Diversity in representation is the top priority.
-The groups described in Section \ref{ssec:sel_grps} are designed to achieve a diverse population of DP0 delegates in several facets: experience, expertise, career level, institution type, geographical location, and scientific field.
+The groups described in Section \ref{ssec:sel_grps} are designed to achieve a diverse population of DP0 delegates in several facets, such as experience, expertise, career level, institution type, geographical location, scientific field, and minority representation.
 The selection committee will also consider these aspects of diversity within the groups.
+
+The selection committee will use of diversity optimization software such as {\tt entrofy} \citep{2019arXiv190503314H} to inform process of identifying DP0 delegates.
 
 Short-form write-in responses will be solicited from applicants so that they may explain their relationship to the groups with which they self-identify.
 However, applicants will not be asked to, e.g., provide a robust scientific justification for their participation in DP0, or a detailed plan for their DP0 delegate action (Section \ref{ssec:res_act}).
 While it might at first seem reasonable to consider aspects such as "science impact" or "contributed value" in a selection process like this, doing so could run counter to diversity initiatives (i.e., not all applicants will be equally able to express such aspects in language familiar to the committee members).
 In a supportive environment with adequate resources (Section \ref{ssec:res_sup}), all DP0 delegates should have an equivalent potential to succeed in their endeavors.
+
 
 \subsection{Equitable Access}\label{ssec:sel_equity}
 
@@ -278,12 +292,13 @@ All of the drop-down menus should have multiple selections enabled.
 Personal Information
 \begin{itemize}
 \item first name, surname (2 write-in fields)
+\item email address (1 write-in field)
 \item pronouns (drop-down menu with write-in option)
 \item affiliation(s) (drop-down menu with write-in option)
 \item city, country (2 write-in fields)
-\item email address (1 write-in field)
 \item first and second languages, preferred correspondence language (3 drop-down menus)
 \item career stage (drop-down menu with write-in option)
+\item self-identify as a minority (drop-down menu with write-in option)
 \end{itemize}
 
 DP0-Related Information
@@ -314,14 +329,15 @@ To ensure that at least some accounts are available for new people to join for D
 The following paragraph provides additional motivation for this multi-stage approach to accounts allocation.
 
 The entire duration of DP0 is long, at least 1 year and potentially longer.
-It is anticipated that many delegates would not be able or willing to make time commitment for DP0.1 (minimal as it may be; Section \ref{sssec:intro_del_resp}).
+It is anticipated that many delegates would not be able or willing to make time commitment for DP0.1 (Section \ref{sssec:intro_del_resp}).
 Furthermore, some scientists might be more interested in the DP0.2 data set than DP0.1.
 Additionally, achieving diverse and equitable access to DP0 might also take some time: the advertisements must percolate, people must free up time in their schedules or obtain grants to fund their work, and the DP0-related resources and support network will become enriched over time (and thus more attractive to a wider variety of participants).
 To avoid the perception that access to any of DP0 is restricted to individuals who can commit to participating at the time of DP0.1, 25\% of the 300 RSP accounts will be reserved for DP0.2.
 Any accounts relinquished by DP0.1 participants will be added to this reservation and reallocated for DP0.2.
 
 Applications might also be reviewed on intermediate timescales in order to more fully include members of the groups identified in Table \ref{tab:delegate_groups} and achieve the diversity-related goals of DP0 participation.
-On such intermediate timescales the applications might be reviewed only by the Rubin Operations executive team and/or the Community Engagement Team instead of reconvening a full selection committee. 
+Applicants will not need to resubmit their application for DP0.1, as all applications received by that time would be considered.
+% On such intermediate timescales the applications might be reviewed only by the Rubin Operations executive team and/or the Community Engagement Team instead of reconvening a full selection committee. 
 
 \begin{table}[!h]
 \centering
@@ -352,10 +368,8 @@ Delegates may not share accounts or passwords, but will be free (and encouraged!
 Account usage policies might include, e.g., best practices for starting and stopping servers, understanding that computational processes which overburden the system might be curtailed, abiding by storage capacity quotas, and following on- and off-boarding steps.
 
 As the total number of accounts will be limited to 300, if applications are oversubscribed then delegates who don't appear to be using their accounts might be periodically contacted and asked to consider voluntarily deactivating to make way for others.
-In the case of a high oversubscription for DP0 participation, account holders who do not respond to a sustained number of such inquiries might have their access suspended to make way for others.
-
-However, delegates who are given accounts at the start of DP0.1 but who do not have the work-hours to start using them for a few months (due to prior commitments, teaching loads, etc.) will be accommodated. 
-Active, responsive delegates who are given accounts for DP0.1 may keep them, and will not need to reapply for DP0.2.
+In the case of a high oversubscription for DP0 participation, account holders who do not respond to \emph{multiple} such inquiries \emph{might} have their access suspended to make way for others.
+It is understood that delegates might, for example, not have the work-hours to start using their accounts for a few months (due to prior commitments, teaching loads, etc.), and individuals in this situation would need only reply to confirm interest and intent. 
 
 Policies related to account suspension will be clarified for DP0 delegates during on-boarding.
 Note that this is a temporary measure for the Data Previews, and not how accounts will work during Operations.
@@ -365,7 +379,7 @@ Note that this is a temporary measure for the Data Previews, and not how account
 It is recognized that on-boarding resources and organizational infrastructure provided by Rubin Observatory will be necessary to enable equitable access and benefits for all delegates, including novice science platform users (Section \ref{ssec:sel_equity}). 
 However, potential DP0 delegates should be aware that the Rubin Observatory pre-operations team is still building their support resources and infrastructure, and some patience might be required. 
 
-The support resources will be presented for DP0 delegates elsewhere, but would include, e.g., virtual live sessions and recordings of RSP demonstrations, user guides and documentation, and jupyter notebook tutorials.
+The support resources will be presented for DP0 delegates elsewhere, but would include, e.g., virtual live sessions and recordings of RSP demonstrations, user guides and documentation, and Jupyter notebook tutorials.
 The organizational infrastructure will include online open forums for question-and-answer, issue resolution, and general discussion (e.g., Community.lsst.org), as well as regularly scheduled working groups and "office hours" run by Rubin staff.
 Opportunities will be provided for DP0 delegates to communicate with the CET about needed resources and support (e.g., periodic surveys, drop-in discussion sessions).
 
