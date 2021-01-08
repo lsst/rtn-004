@@ -66,7 +66,7 @@ This document describes the diversity-driven application and selection process f
 There are three planned Data Previews (DPs) during the period leading up to the start of Rubin Operations, termed pre-operations.
 DP0 will be based on simulated data.
 DP1 and DP2 will be based on data taken during Rubin Observatory commissioning; DP1 based on data taken with the Rubin Observatory Commissioning Camera (ComCam), and DP2 based on data taken with the LSST Camera (LSSTCam) -- the science instrument for Rubin Observatory.
-DP0 is planned to start in June 2021 and run through 2022, with DP1 and DP2 currently foreseen to begin in 2022 and 2023 respectively.
+DP0 is planned to start by the end of June 2021 and run through 2022, with DP1 and DP2 currently foreseen to begin in 2022 and 2023 respectively.
 The Data Previews will enable the community to access and analyze LSST-like data in the Rubin Science Platform (RSP) on a shared-risk basis. 
 
 \subsection{The Goals of DP0}\label{ssec:intro_goals}
@@ -101,7 +101,7 @@ A full description of the DESC's DC2 simulation can be found in \citep{2020arXiv
 
 \subsection{Two Stages: DP0.1 and DP0.2}\label{ssec:intro_stages}
 
-The DP0.1 data set will contain the DC2 images and catalogs as processed by the DESC using the LSST Science Pipelines.
+The DP0.1 data set will contain the DC2 images and catalogs as processed by the DESC using the LSST Science Pipelines (v0.19.0).
 The DP0.1 data products will be available in the RSP in their original format as processed by the DESC, which is similar to that of planned LSST data products.
 The projected date by which the DP0.1 data products will be made available to DP0 delegates in the RSP is June 30 2021.
 Therefore, in Section \ref{ssec:sel_time} the first stage of DP0 delegates are scheduled to have their accounts activated by June 30 2021.
@@ -114,7 +114,7 @@ Therefore, in Section \ref{ssec:sel_time} the second stage of DP0 delegates are 
 Further details about the DP0.1 and DP0.2 data sets, such as their exact table schema and formats, will be presented as part of the resources and materials made available to DP0 delegates (Section \ref{ssec:res_sup}).
 
 There will also be a few capability differences between the two phases, which might affect some delegates' planned activities.
-For example, in DP0.1, the notebook aspect of the RSP will offer image access via the Butler\footnote{The Butler is a middleware component for persisting and retrieving image datasets.}, whereas in DP0.2 image access will be available via Virtual Observatory (VO) services.
+For example, in DP0.1, the notebook aspect of the RSP will offer image access via the Butler\footnote{The Butler is a middleware component of the DMS for persisting and retrieving image datasets.}, whereas in DP0.2 image access will be available via Virtual Observatory (VO) services.
 In DP0.1, the portal aspect of the RSP will only be available for catalogs, whereas in DP0.2 it will also be available for images.
 Further details about capability differences can be found in \citeds{RTN-001}, and will also be clarified in the resources and materials for DP0 delegates (Section \ref{ssec:res_sup}).
 
@@ -163,9 +163,9 @@ In addition to the above, all DP0 delegates will be expected to:
 Policies regarding the access to and use of the Rubin Observatory data products and services are described in \citeds{RDO-013}.
 DPOL-302 and DPOL-507 describe how only data rights holders may have Rubin Science Platform accounts, and this is why DP0 participants must have data rights.
 
-The simulated data sets used for DP0 are world-public in the language of DPOL-301, which means that the data can be shared with anyone (and does not mean the data will be served publicly).
+The simulated data sets used for DP0 are world-public in the language of DPOL-301, which means that the data can be shared with anyone, but does not mean the data will be served publicly.
 Anyone may publish results based on analyses of world-public data sets.
-(DP0 is therefore a special case: the commissioning data planned for release in DP1 and DP2, and then the survey data itself, will have a 2-year proprietary period before it is able to be shared with non data rights holders.)
+(DP0 is therefore a special case: the commissioning data planned for release in DP1 and DP2, and subsequently the survey data, will have a 2-year proprietary period before it is able to be shared with non data rights holders.)
 
 A full list of DP0 acknowledgements and references for delegates who are publishing results based on their DP0 activities with the DC2 data set in the RSP will be provided. 
 For example, DP0 delegates who publish results based on the DC2 simulation are requested to reference the DESC's DC2 paper, \citet{2020arXiv201005926L}.
@@ -265,7 +265,7 @@ A staged application process is implemented to maximize the inclusion of delegat
 On-boarding resources and a supportive community will be generated and maintained by the CET (Section \ref{ssec:res_sup}).
 Such resources are recognized as necessary for delegates to acquire the benefits of DP0 participation, regardless of their past experience or expertise.
 
-Flexible time commitments mean that delegates are free to do their DP0-related activities on any timescale which works for them, and that there is no minimum time commitment or expected ``start date" (Section \ref{sssec:intro_del_resp}).
+Flexible time commitments mean that delegates are free to do their DP0-related activities on whatever timescale works for them, and that there is no minimum time commitment or expected ``start date" (Section \ref{sssec:intro_del_resp}).
 
 
 \subsection{Application Form Contents}\label{ssec:sel_form}
@@ -318,7 +318,7 @@ Applicants associated with in-kind proposals that are still in the approval proc
 
 \subsection{Selection Timeline}\label{ssec:sel_time}
 
-Applications will be primarily reviewed by the selection committee in two stages, which coincide with the projected dates when the DP0.1 and DP0.2 science-ready data products will be made available to DP0 delegates in the RSP (Section \ref{ssec:intro_stages}).
+Applications will be primarily reviewed by the selection committee in two stages, which coincide with the projected dates when the DP0.1 and DP0.2 data products will be made available to DP0 delegates in the RSP (Section \ref{ssec:intro_stages}).
 These dates are provided in Table \ref{tab:selection_timeline}.
 The application due dates are set as late as possible to allow sufficient time for people to learn about DP0 and decide whether to invest time in participating.
 
@@ -358,7 +358,7 @@ DP0.2 & 100\%  &  Jan 31 2022   &  Feb 28 2022  &  Mar 31 2022 \\
 
 \subsection{Policies for RSP Accounts}\label{ssec:res_pol}
 
-For the duration of DP0, the RSP will be installed in the Interim Data Facility (IDF), which will be deployed on the Google Cloud Platform\footnote{\url{https://www.lsst.org/news/rubin-observatory-will-partner-google-cloud-host-interim-data-facility}}.
+For the duration of DP0, an instance of the RSP will be running at the Interim Data Facility (IDF), which will be deployed on the Google Cloud Platform\footnote{\url{https://www.lsst.org/news/rubin-observatory-will-partner-google-cloud-host-interim-data-facility}}.
 
 Access to the RSP and the DP0 data products and services are limited to data rights holders, and all DP0 delegates must abide by the data rights policies in \citeds{RDO-013}.
 
@@ -366,14 +366,14 @@ All DP0 delegates will be asked to abide by specific policies related to account
 The full details for these policies will be provided to delegates prior to account creation. 
 
 Delegates may not share accounts or passwords, but will be free (and encouraged!) to provide tours of the RSP or live demonstrations of their work to individuals who are not DP0 delegates.
-Account usage policies might include, e.g., best practices for starting and stopping servers, understanding that computational processes which overburden the system might be curtailed, abiding by storage capacity quotas, and following on- and off-boarding steps.
+Account usage policies might include, e.g., best practices for starting and stopping servers, understanding that computational processes that overburden the system might be curtailed, abiding by storage capacity quotas, and following on- and off-boarding steps.
 
 As the total number of accounts will be limited to 300, if applications are oversubscribed then delegates who don't appear to be using their accounts might be periodically contacted and asked to consider voluntarily deactivating to make way for others.
 In the case of a high oversubscription for DP0 participation, account holders who do not respond to \emph{multiple} such inquiries \emph{might} have their access suspended to make way for others.
 It is understood that delegates might, for example, not have the work-hours to start using their accounts for a few months (due to prior commitments, teaching loads, etc.), and individuals in this situation would need only reply to confirm interest and intent. 
 
 Policies related to account suspension will be clarified for DP0 delegates during on-boarding.
-Note that this is a temporary measure for the Data Previews, and not how accounts will work during Operations.
+Note that this is a temporary measure for the Data Previews, and not how accounts will be managed during Operations.
 
 \subsection{Support for Delegates}\label{ssec:res_sup}
 
