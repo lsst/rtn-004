@@ -93,11 +93,22 @@ This data set is the second in a series of data challenges, and is thus named DC
 
 As explained in the DESC's DC2 paper \citep{2020arXiv201005926L}, the core science goals that DC2 was developed to address are all extragalactic, such as weak lensing correlations and Type Ia supernova cosmology.
 For these reasons, the simulation is five years of observations of 300 square degrees of extragalactic regions in six filters with a baseline survey strategy, plus one square degree of a deep drilling field.
+Realistic observing conditions and a baseline survey strategy were applied (for readers familiar with the term, the operations simulation ``OpSim minion\_1016" was used).
+
 The types of extragalactic objects simulated for DC2 include clusters, galaxies, Type Ia supernovae, and active galactic nuclei.
 The types of galactic objects include stars, about 10\% of which have periodic or non-periodic variability.
 DC2 does not include solar system objects, or other types of extragalactic transients such as tidal disruption events or core collapse supernovae.
-
 A full description of the DESC's DC2 simulation can be found in \citep{2020arXiv201005926L}, and in particular the synthetic galaxy catalog is described in \citet{2019ApJS..245...26K}.
+
+As described in Section \ref{ssec:intro_stages} below, the DP0 data will be released in two stages: DP0.1 and DP0.2.
+For DP0.1, the image processing outputs that will be available will simulate the LSST data release (DR) data products for the wide-fast-deep (WFD) main survey at five years and are referred to as DR6-WFD (for LSST, DR1 is 0.5 years of data, DR2 is the first year, etc.).
+DR6-WFD includes the raw images, processed visit images (PVIs, where a visit is a single 30 second observation), source catalogs for the PVIs, coadded images for each band, and multi-band object catalogs for the coadds.
+It is important to note that the processing does not include difference image analysis, and that the catalog photometry is all from the direct images.
+It is also important to note that the source catalogs for the PVIs are unassociated and forced photometry has not been run on the visit images, which means that there are no time-domain object catalogs or light curves.
+
+For DP0.2, at a minimum, the same data products as described above will be made available, but in this case processed by the Rubin operations team using an up-to-date version of the LSST Science Pipelines provided by the Rubin Observatory construction team.
+This might include additional data products that are produced by the pipelines as of Sep 2021.
+Further updates about potential additional DC2 data products, such as the one-year outputs (DR2-WFD), difference image analysis (DIA) and DIA photometry, or forced photometry (lightcurves) will be announced prior to DP0.2.
 
 \subsection{Two Stages: DP0.1 and DP0.2}\label{ssec:intro_stages}
 
