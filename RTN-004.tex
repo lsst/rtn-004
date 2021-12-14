@@ -31,8 +31,9 @@
 In 2021 the Rubin Observatory began Data Preview 0 (DP0), the first of three data previews during the period leading up to the start of Rubin Operations.
 DP0 makes simulated LSST-like data products, which are similar to the future LSST data releases, available in the Rubin Science Platform (RSP).
 The goals of DP0 are to serve as an early integration test of the LSST science pipelines and the RSP and to enable the community to prepare to do science with the unprecedented LSST data set. 
-To meet these goals, the Rubin Observatory will support 600 RSP accounts for "DP0 delegates": individuals who will represent the science community as early users of the RSP.
+To meet these goals, the Rubin Observatory will support a total of 600 RSP accounts for "DP0 delegates": individuals who will represent the science community as early users of the RSP.
 DP0 delegates benefit from an accelerated learning experience with the RSP's query, visualization, and analysis tools; are free to pursue their own science with the DP0 data set in the RSP; and have opportunities to provide feedback about their experience to Rubin Observatory.
+Of these 600 accounts, 300 were allocated in 2021 as part of Phase 1 (DP0.1) and 300 new accounts will be allocated in 2022 for Phase 2 (DP0.2).
 As the number of RSP accounts for community access to DP0 is limited, a set of guidelines for how Rubin Observatory should select the participants is required. 
 This document describes the diversity-driven application and selection process for DP0 delegates, and briefly describes some of the resources, support, and activities that will be available to them.
 }
@@ -89,14 +90,16 @@ The term "delegates" reflects the fact that these individuals are representing t
 
 \subsection{The Total Number of DP0 Delegates}
 
-There will be 600 RSP user accounts at the Interim Data Facility (IDF; the Google Cloud Platform\footnote{\url{https://www.lsst.org/news/rubin-observatory-will-partner-google-cloud-host-interim-data-facility}}) available for science community DP0 delegates.
-In addition, there will be $\sim$150 accounts to cover all Rubin Observatory staff members who need one (e.g., Data Management, Verification and Validation, Commissioning, and Community Engagement team members).
-For reference, 600 RSP accounts for community participants marks an order of magnitude increase in the number of community accounts in the current NCSA instance of the RSP (via the Stack Club).
+For provenance, the {\it initial} plan for DP0 (as of Jan 2021) was to have a total of 300 RSP user accounts available at the Interim Data Facility (IDF; the Google Cloud Platform\footnote{\url{https://www.lsst.org/news/rubin-observatory-will-partner-google-cloud-host-interim-data-facility}}) for DP0 delegates, with 75\% allocated for Phase 1 (DP0.1) by Jun 2021, and 25\% reserved for Phase 2 (DP0.2) in 2022 (see Section \ref{ssec:sel_dp01}).
 
-The number of RSP accounts remains constrained during the Rubin Observatory construction and pre-operations phase -- and especially for DP0 -- due to the Rubin pre-operations team's limited scope in providing support for data products, software, and services that are still in development.
+However, the first few months of DP0.1 went so well that Rubin Observatory leadership decided to allocate RSP accounts to all of the DP0.1 applicants, and add 300 new accounts for DP0.2.
+Thus, {\bf the total number of RSP accounts supported for DP0 will be 600}, and these 300 new accounts will be allocated by Jun 2022 (see Section \ref{ssec:sel_dp02}).
+For reference, 600 RSP accounts for community participants marks an order of magnitude increase in the number of community accounts made available to Stack Club\footnote{\url{https://github.com/LSSTScienceCollaborations/StackClub}} members.
+
+The number of RSP accounts remains limited during the Rubin Observatory construction and pre-operations phase -- and especially for DP0 -- due to the Rubin pre-operations team's limited scope in providing support for data products, software, and services that are still in development.
 An order of magnitude increase represents a safe and sustainable scaling up of the Data Management System, which is also still in development, at the IDF.
 
-Of these 600 accounts, $\sim$300 were allocated in 2021 in advance of the release of DP0.1 on June 30 2021 and another $\sim$300 accounts will be available in 2022 in advance of the release of DP0.2 on June 30 2022 (Section \ref{sec:sel}).
+In addition, there will be $\sim$150 accounts to cover all Rubin Observatory staff members who need one (e.g., Data Production, System Performance, and construction Commissioning, and Community Engagement team members), and to cover members of International Program teams who require DP0 access in order to complete their in-kind deliverables\footnote{Anyone in this situation should contact their Program Manager and Melissa Graham.}.
 
 It is a primary goal of the Rubin pre-operations team to provide RSP access as soon as possible to all data rights holders over the course of the data previews. 
 At least by the start of Rubin Observatory Operations, all data rights holders will be able to have RSP accounts.
@@ -112,7 +115,6 @@ The CET also works with the Rubin directorate to identify individuals, especiall
 
 A two-stage application process for DP0.1 and 0.2 is implemented to maximize the inclusion of delegates who would not be able to make a time commitment at the start of DP0.1, and because it is recognized that it might take time to achieve a diverse set of DP0 delegates and to provide equitable access to DP0.
 For example, the advertisements must percolate, people must free up time in their schedules or obtain grants to fund their work, and the DP0-related resources and support network will become enriched over time (and thus more attractive to a wider variety of participants).
-Furthermore, some scientists might be more interested in the DP0.2 data set than DP0.1.
 
 On-boarding resources and a supportive community are generated and maintained by the CET (see Section \ref{ssec:res_sup} and the Delegates Homepage at \url{dp0-1.lsst.io}).
 Such resources are recognized as necessary for delegates to acquire the benefits of DP0 participation, regardless of their past experience or expertise.
@@ -126,8 +128,8 @@ The simulated data set adopted for DP0 was generated by the Dark Energy Science 
 This data set is the second in a series of data challenges, and is thus named DC2.
 
 As explained in the DESC's DC2 paper \citep{2020arXiv201005926L}, the core science goals that DC2 was developed to address are all extragalactic, such as weak lensing correlations and Type Ia supernova cosmology.
-For these reasons, the full DC2 simulation is five years of observations of 300 square degrees of extragalactic regions in six filters with a baseline survey strategy, plus one square degree of a deep drilling field (DDF).
-Realistic observing conditions and a baseline survey strategy were applied (for readers familiar with the term, the operations simulation "OpSim minion\_1016" was used).
+For these reasons, the full DC2 simulation is five years of observations of 300 square degrees of extragalactic regions in six filters with the initial (version 1) baseline survey strategy\footnote{For readers familiar with the term, the operations simulation "OpSim minion\_1016" was used, which represented the initial (version 1) baseline strategy. The 2021 recommendations from the Survey Cadence Optimization Committee (SCOC) about updates to the baseline strategy can be found in \url{ls.st/Document-37922}.}, plus one square degree of a deep drilling field (DDF).
+Realistic observing conditions and a baseline survey strategy were applied.
 
 The types of extragalactic objects simulated for DC2 include clusters, galaxies, Type Ia supernovae, and active galactic nuclei (AGN).
 The types of galactic objects include stars, about 10\% of which have periodic or non-periodic variability.
@@ -159,8 +161,7 @@ Therefore, in Section \ref{ssec:sel_time} the second stage of DP0 delegates are 
 Further details about the DP0.1 data set (e.g., table schema, image types) can be found in the DP0.1 documentation at \url{dp0-1.lsst.io}, and similar resources will be available for DP0.2.
 
 There will also be a few capability differences between the two phases, which might affect some delegates' planned activities.
-For example, in DP0.1, the notebook aspect of the RSP offers image access via the Butler\footnote{The Butler is a middleware component of the DMS for persisting and retrieving image datasets.}, whereas in DP0.2 image access will be available via Virtual Observatory (VO) services.
-In DP0.1, the portal aspect of the RSP is only be available for catalogs, whereas in DP0.2 it will also be available for images.
+For example, in DP0.1, the notebook aspect of the RSP offered image access only via the Butler\footnote{The Butler is a middleware component of the DMS for persisting and retrieving image datasets.}, whereas in DP0.2 image access will be available via the Butler and Virtual Observatory (VO) services.
 Further details about capability differences can be found in \citeds{RTN-001}, and will be clarified in the DP0 documentation.
 
 
@@ -181,7 +182,7 @@ These potential benefits of DP0 participation motivate the focus on research inc
 Documentation resources and support for delegates, provided by Rubin Observatory, are necessary for delegates to obtain these benefits, and they are described in Section \ref{ssec:res_sup}.
 
 The most important {\bf responsibility} is that DP0 delegates understand and abide by the policies for RSP accounts at the IDF (e.g., Acceptable Use, Code of Conduct, Data Rights), which are described in detail in Section \ref{ssec:res_pol}.
-Delegates are also expected to take learn how to use the RSP well enough to perform some basic scientific exercises, and then take a small action that informs or enhances the DMS, the RSP, or a Science Collaboration. 
+Delegates are also expected to learn how to use the RSP well enough to perform some basic scientific exercises, and then take a small action that informs or enhances the DMS, the RSP, or a Science Collaboration. 
 Such actions are envisioned to be simple and optional (they will not be tracked), and it will be left to the discretion of individual delegates to decide what kind of actions best match their interests and expertise.
 Examples of delegate actions are provided in Section \ref{ssec:res_act}.
 
@@ -227,7 +228,7 @@ G & 40 & 25 & representatives of the Science Collaborations \\
 For Group D, the term 'small and/or underserved US institutions and colleges' refers to, among others: institutions that do not have an R1 or R2 Carnegie classification; institutions that do not grant doctorates in astronomy or physics; institutions that identify as a minority serving institution (MSI), a historically black college or university (HBCU), or a hispanic-serving institute (HSI); or institutions that have other similar aspects.
 
 Applicants will be able to self-identify with {\it multiple groups} on the application form (Section \ref{ssec:sel_form}).
-This means that, for example, Chilean astronomers and Science Collaboration members are not restricted to gaining a delegate position via Groups F and G respectively, Stack Club\footnote{\url{https://github.com/LSSTScienceCollaborations/StackClub}} members are not restricted to Group B due to their RSP experience, and so on.
+This means that, for example, Chilean astronomers and Science Collaboration members are not restricted to gaining a delegate position via Groups F and G respectively, Stack Club members are not restricted to Group B due to their RSP experience, and so on.
 
 For DP0.1, about one quarter of the accounts in Group G (10\% of the total) were withheld from the selection process and made available for the Science Collaborations to assign to representatives engaging in DP0 related activities such as mentoring programs, thereby enabling such programs to exist.
 
@@ -282,8 +283,8 @@ A score-ranked list of applicants is then used to identify delegates and a waitl
 The Jupyter Notebook that ran this selection algorithm for DP0.1 is available at \url{ls.st/Document-37722}.
 
 A very similar selection algorithm will be adopted for DP0.2, if the applications are oversubscribed.
-In the case of significant undersubscription, all applicants would be allocated an account.
-In the case of significant undersubscription {\it and} a lack of diversity in the applicant pool, a campaign of targeted advertising or participation invitations will be designed and deployed.
+In the case of significant undersubscription from any targeted demographic (such as the delegate Groups, career stage, science interest, or underrepresented identity) or if there is a general lack of diversity in the applicant pool, some accounts will remain unassigned and a campaign of targeted advertising or participation invitations will be designed and deployed.
+However, if the applications are undersubscribed but the pool is diverse, all applicants would be allocated an account.
 
 
 \subsection{Plus Ones}\label{ssec:sel_po}
@@ -297,8 +298,8 @@ For DP0.1, the popularity of this option was underestimated: about $\sim$60 appl
 By November 2021, all applicants who had requested a "Plus One" account had been invited to provide a name.
 
 For DP0.2, $\sim$50 accounts will be reserved for "Plus Ones".
-Part of the reasoning behind increasing the number of "Plus Ones" to allocate is that, anecdotally, for scientists with a constrained amount of research time the projects for which they are best able to make progress are the ones being used for student research. 
-Furthermore, the scientists with the most constrained amount of research time are those with heavy teaching loads, which are more likely to be at small or underserved institutions.
+Part of the reasoning behind increasing the number of "Plus Ones" to allocate is that, anecdotally, for scientists with a limited amount of research time the projects for which they are best able to make progress are the ones being used for student research. 
+Furthermore, the scientists with the most limited amount of research time are those with heavy teaching loads, which are more likely to be at small or underserved institutions.
 
 
 \subsection{Selection Timeline}\label{ssec:sel_time}
@@ -324,7 +325,7 @@ DP0.2 & Apr 30 2022   &  May 31 2022  &  Jun 30 2022 \\
 
 \subsection{DP0.1 Allocations}\label{ssec:sel_dp01}
 
-When the DP0.1 selection algorithm was run in May 2021, the total number of DP0 accounts was going to be 300 (not 600) and 25\% of them were reserved for DP0.2.
+When the DP0.1 selection algorithm was run in May 2021, the total number of DP0 accounts was set at 300 (not 600) and 25\% of them were reserved for DP0.2.
 After subtracting the 30 accounts reserved for the Science Collaborations, that left 203 accounts to be allocated for DP0.1.
 Ten of those were for "Plus Ones" (see Section \ref{ssec:sel_po}), leaving 193 allocated via the selection process.
 For DP0.1, applications were oversubscribed by a factor of $\sim$1.4 with respect to this number of 193, and there was a waitlist.
@@ -351,8 +352,8 @@ These remain to be determined at the discretion of the Rubin Observatory Directo
 
 The last item, "Plus Ones" for Rubin staff, has been added so that staff can avoid any apparent bias or conflict of interest in the selection process that might arise if those students applied, and so that Rubin staff can boost their own DP0-related science productivity with their discretionary science time, which would have a positive impact on DP0 as a whole when that work is shared with other delegates.
 
-Formally, these $\sim$50 accounts would come from the 300 accounts being made available for DP0.2.
-However, since as of December 2021 there were only 244 DP0.1 delegates with RSP accounts (Section \ref{ssec:sel_dp01}), it is likely that these $\sim$50 accounts will absorb the DP0.1 leftovers and that all 300 DP0.2 accounts will be allocated via the selection algorithm described in Section \ref{ssec:sel_alg}
+Formally, these $\sim$50 accounts would come from the 300 (new) accounts being made available for DP0.2.
+However, since as of December 2021 there were only 244 DP0.1 delegates with RSP accounts (out of the 300 DP0.1 accounts; Section \ref{ssec:sel_dp01}), it is likely that these $\sim$50 accounts will absorb the DP0.1 leftovers and that all 300 new DP0.2 accounts will be allocated via the selection algorithm described in Section \ref{ssec:sel_alg}
 
 
 \section{Policies, Resources, and Activities for DP0 Delegates}\label{sec:res}
